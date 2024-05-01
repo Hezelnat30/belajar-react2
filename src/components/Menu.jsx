@@ -2,6 +2,7 @@ import data from "../data.js";
 import Food from "./Food.jsx";
 
 export default function Menu() {
+  const numData = data;
   return (
     <div className="container mt-10">
       <div className="max-w-2xl mx-auto">
@@ -12,13 +13,21 @@ export default function Menu() {
           Eropa yang inovatif.
         </p>
       </div>
-      <ul className="flex w-full gap-8 mt-8 flex-wrap justify-center">
-        {data.map((food) => (
-          <li key={food.id}>
-            <Food data={food} />
-          </li>
-        ))}
-      </ul>
+      {numData.length > 0 ? (
+        <ul className="flex w-full gap-8 mt-8 flex-wrap justify-center">
+          {data.map((food) => (
+            <li key={food.id}>
+              <Food data={food} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div className="flex justify-center">
+          <p className="text-center font-bold text-2xl bg-sky-300 p-4 my-4">
+            Sedang kosong bro, kembali besok!
+          </p>
+        </div>
+      )}
     </div>
   );
 }
