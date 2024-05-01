@@ -1,4 +1,5 @@
-import Food from "./Food";
+import data from "../data.js";
+import Food from "./Food.jsx";
 
 export default function Menu() {
   return (
@@ -11,36 +12,13 @@ export default function Menu() {
           Eropa yang inovatif.
         </p>
       </div>
-      <div className="flex w-full flex-wrap">
-        <Food
-          nama="Nasi Goreng"
-          foto="../public/food/nasi-goreng.jpg"
-          deskripsi="Nasi goreng yang enak mantap jos dan lezat sekali."
-          harga={25000}
-          stok={Math.random() >= 0.5 ? true : false}
-        />
-        <Food
-          nama="Sate Ayam"
-          foto="../public/food/sate-ayam.jpg"
-          deskripsi="Sate Ayam yang enak mantap jos dan lezat sekali."
-          harga={17000}
-          stok={Math.random() >= 0.5 ? true : false}
-        />
-        <Food
-          nama="Martabak Manis"
-          foto="../public/food/martabak-manis.jpg"
-          deskripsi="Martabak Manis yang enak mantap jos dan lezat sekali."
-          harga={25000}
-          stok={Math.random() >= 0.5 ? true : false}
-        />
-        <Food
-          nama="Rendang"
-          foto="../public/food/rendang.jpg"
-          deskripsi="Rendang daging yang enak mantap jos dan lezat sekali."
-          harga={17000}
-          stok={Math.random() >= 0.5 ? true : false}
-        />
-      </div>
+      <ul className="flex w-full gap-8 mt-8 flex-wrap justify-center">
+        {data.map((food) => (
+          <li key={food.id}>
+            <Food data={food} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

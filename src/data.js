@@ -1,5 +1,6 @@
 const foodMenu = [
     {
+      id: 1,
       nama: "Nasi Goreng",
       deskripsi: "Nasi yang digoreng dengan bumbu rempah khas Indonesia",
       harga: 25000,
@@ -7,6 +8,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 2,
       nama: "Sate Ayam",
       deskripsi:
         "Potongan daging ayam yang ditusuk dan dibakar, disajikan dengan bumbu kacang",
@@ -15,6 +17,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 3,
       nama: "Sushi Burger",
       deskripsi: "Burger dengan patty sushi, nori, dan saus wasabi",
       harga: 40000,
@@ -22,6 +25,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 4,
       nama: "Rendang",
       deskripsi:
         "Daging yang dimasak dengan santan dan rempah-rempah khas Padang",
@@ -30,6 +34,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 5,
       nama: "Soto Ayam",
       deskripsi: "Sup ayam dengan kuah kuning dan berbagai rempah",
       harga: 18000,
@@ -37,6 +42,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 6,
       nama: "Martabak Manis",
       deskripsi: "Martabak manis: lembut, manis, dan menggugah selera, cocok sebagai pencuci mulut istimewa.",
       harga: 24000,
@@ -44,6 +50,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 7,
       nama: "Swedish Meatball",
       deskripsi: "Swedish Meatball, Kelezatan daging berbentuk bola dengan krim dan mashed potato.",
       harga: 34000,
@@ -51,6 +58,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 8,
       nama: "Wagyu Steak MB5",
       deskripsi: "Potongan daging berkualitas tinggi, daging Wagyu kelas MB5 memberikan kenikmatan yang luar biasa.",
       harga: 92000,
@@ -58,6 +66,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 9,
       nama: "Ayam Penyet",
       deskripsi:
         "Ayam yang digeprek dengan bumbu rempah dan disajikan dengan sambal",
@@ -66,6 +75,7 @@ const foodMenu = [
       stok: Math.random() >= 0.5 ? true : false,
     },
     {
+      id: 10,
         nama: "Pancake Durian",
         deskripsi: "Pancake lembut dengan potongan durian segar dan sirup gula merah",
         harga: 30000,
